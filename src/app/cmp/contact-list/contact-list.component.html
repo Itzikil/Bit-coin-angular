@@ -1,0 +1,4 @@
+<section class="card-container">
+    <contact-preview (onSelect)="onSelect.emit($event)" *ngFor="let contact of contacts" [contact]="contact"></contact-preview>
+    <a class="add-btn" routerLink="/contact/edit"><p>Add</p></a>
+</section>

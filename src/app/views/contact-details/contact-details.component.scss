@@ -1,0 +1,61 @@
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2.5rem;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    a {
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 1.3rem;
+    }
+
+    .details-nav {
+        gap: 200px;
+    }
+
+    ul {
+        list-style: none;
+        // margin: none;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .transfer {
+        background-color: rgba(83, 87, 86, 0.37);
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 290px;
+
+        h3 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    .pre-transfer {
+        background-color: rgba(13, 75, 168, 0.37);
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 290px;
+
+        span {
+            font-weight: 600;
+        }
+
+        li {
+            gap: 3px;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<section routerLink="/contact/{{contact._id}}" (click)="onSelectContactId()" class="contact-preview card ">
+    <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+    <div>
+        <h3>{{contact.name}}</h3>
+        <p>{{contact.phone}}</p>
+    </div>
+</section>

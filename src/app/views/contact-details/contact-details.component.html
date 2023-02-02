@@ -1,0 +1,29 @@
+<section *ngIf="contact" class="contact-details">
+    <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+    <h1>{{contact.name}}</h1>
+    <p>{{contact.phone}}</p>
+    <p>{{contact.email}}</p>
+    <div class="details-nav flex space">
+        <a (click)="onBack()">Back</a>
+        <a routerLink="/contact/edit/{{contact._id}}">Edit</a>
+    </div>
+
+    <div class="transfer">
+        <h3>Transfers coins to {{contact.name}}</h3>
+        <form (ngSubmit)="onTransfer()" class="flex space ">
+            <input [(ngModel)]="amount" type="text" name="amount" placeholder="how much">
+            <button>Transfer</button>
+        </form>
+    </div>
+    
+    <div *ngIf="moves" class="pre-transfer flex column center">
+        <h2>Previous transfers</h2>
+        <ul class="flex column center">
+            <li *ngFor="let move of moves" class="flex column">
+                <p><span>To:</span> {{move.to}}</p>
+                <p title="{{move.at | date:'dd/MM/yyyy hh:mm a'}}"><span>At:</span> {{move.at | dateDesc}}</p>
+                <p><span>Coins:</span> {{move.amount}}</p>
+            </li>
+        </ul>
+    </div>
+</section>

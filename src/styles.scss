@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+button,
+input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+}
+
+button {
+    color: #333;
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.center {
+        align-items: center;
+    }
+
+    &.space {
+        justify-content: space-between;
+    }
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+form {
+    input {
+        // width: 270px;
+        // height: 30px;
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+        background-color: #24232355;
+        font-size: 16px;
+        border: none;
+
+        &::placeholder {
+            color: #cfe1ee;
+            opacity: 1;
+        }
+    }
+}
+
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    color: rgb(65, 67, 68);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+        color: rgb(74, 147, 179);
+    }
+
+    * {
+        pointer-events: none;
+    }
+}

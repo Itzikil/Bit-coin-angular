@@ -1,0 +1,10 @@
+<section class="flex column center gap16 signup">
+
+    <img src="../../../assets/icons/bitcoin.png" alt="">
+    <h2>Signup</h2>
+    <h3>Please enter your name</h3>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="flex column center gap16">
+        <input [(ngModel)]="username" type="text" name="name" placeholder="Name">
+        <button>Sign up</button>
+    </form>
+</section>
